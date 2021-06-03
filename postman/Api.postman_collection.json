@@ -1,0 +1,94 @@
+{
+	"id": "16f43d82-5388-d497-1981-f7af37486501",
+	"name": "Api",
+	"description": "Api proyecto final",
+	"order": [],
+	"folders": [
+		{
+			"name": "products",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"order": [
+				"17aed8c7-4c99-04ce-8b7a-8c8d7da7ac80",
+				"8276e280-07f3-e749-e5e4-f69ea1f4219f"
+			],
+			"owner": "11208631",
+			"folders_order": [],
+			"id": "6aab957e-d791-d5e3-1103-224db0763500"
+		},
+		{
+			"name": "users",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"order": [],
+			"owner": "11208631",
+			"folders_order": [],
+			"id": "c8911fc9-c390-ed3c-f66d-d46564dfc234"
+		}
+	],
+	"folders_order": [
+		"6aab957e-d791-d5e3-1103-224db0763500",
+		"c8911fc9-c390-ed3c-f66d-d46564dfc234"
+	],
+	"timestamp": 1622043625255,
+	"owner": "11208631",
+	"public": false,
+	"requests": [
+		{
+			"id": "17aed8c7-4c99-04ce-8b7a-8c8d7da7ac80",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:4000/products",
+			"folder": "6aab957e-d791-d5e3-1103-224db0763500",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622043725839,
+			"name": "/products",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "17aed8c7-4c99-04ce-8b7a-8c8d7da7ac80"
+		},
+		{
+			"id": "8276e280-07f3-e749-e5e4-f69ea1f4219f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/products",
+			"folder": "6aab957e-d791-d5e3-1103-224db0763500",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622043902809,
+			"name": "/products post",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"responses": [],
+			"rawModeData": "{\n\t  \"name\": \"laptop acer\",\n\t  \"category\": \"laptos\",\n\t  \"price\": 352.22,\n\t  \"imgURL\": \"https://www.lenovo.com/medias/lenovo-ideapad-s-series-feature-1.jpg?context=bWFzdGVyfHJvb3R8NTI4MzZ8aW1hZ2UvanBlZ3xoYWUvaGI2Lzk4MTU5MjQ3Njg3OTguanBnfGFlNGIzOGNmNWY2Y2M2NWViMDVhMDVjZjdmMGRjNGQwNTJkNjA0NzAzZmJjNmVjODI5NDY1NDIyNTRkZjA1ZDQ\"\n}"
+		}
+	]
+}
