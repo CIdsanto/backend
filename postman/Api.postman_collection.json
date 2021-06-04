@@ -5,12 +5,27 @@
 	"order": [],
 	"folders": [
 		{
+			"name": "auth",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"order": [
+				"7470f0e2-6c8c-5b78-8e0b-b13c69fb6eb9",
+				"1c4995f0-24ef-5b6a-29b6-2042b02a0a7b"
+			],
+			"owner": "11208631",
+			"folders_order": [],
+			"id": "75435018-572b-438c-0b72-132021db1abe"
+		},
+		{
 			"name": "products",
 			"description": "",
 			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
 			"order": [
 				"17aed8c7-4c99-04ce-8b7a-8c8d7da7ac80",
-				"8276e280-07f3-e749-e5e4-f69ea1f4219f"
+				"8276e280-07f3-e749-e5e4-f69ea1f4219f",
+				"13544c59-6434-997a-f4e5-c9385e10f86d",
+				"7e5b284c-8edf-4ceb-a05a-9dfbbe967fce",
+				"e1b2e1fb-c4df-b369-2ba9-0d979ba30930"
 			],
 			"owner": "11208631",
 			"folders_order": [],
@@ -28,17 +43,49 @@
 	],
 	"folders_order": [
 		"6aab957e-d791-d5e3-1103-224db0763500",
-		"c8911fc9-c390-ed3c-f66d-d46564dfc234"
+		"c8911fc9-c390-ed3c-f66d-d46564dfc234",
+		"75435018-572b-438c-0b72-132021db1abe"
 	],
 	"timestamp": 1622043625255,
 	"owner": "11208631",
 	"public": false,
 	"requests": [
 		{
+			"id": "13544c59-6434-997a-f4e5-c9385e10f86d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/api/products/60ae6b16e4c5c7121055aea5",
+			"folder": "6aab957e-d791-d5e3-1103-224db0763500",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622673052834,
+			"name": "/products by Id",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"responses": [],
+			"rawModeData": "{\n\t  \"name\": \"laptop acer\",\n\t  \"category\": \"laptos\",\n\t  \"price\": 352.22,\n\t  \"imgURL\": \"https://www.lenovo.com/medias/lenovo-ideapad-s-series-feature-1.jpg?context=bWFzdGVyfHJvb3R8NTI4MzZ8aW1hZ2UvanBlZ3xoYWUvaGI2Lzk4MTU5MjQ3Njg3OTguanBnfGFlNGIzOGNmNWY2Y2M2NWViMDVhMDVjZjdmMGRjNGQwNTJkNjA0NzAzZmJjNmVjODI5NDY1NDIyNTRkZjA1ZDQ\"\n}"
+		},
+		{
 			"id": "17aed8c7-4c99-04ce-8b7a-8c8d7da7ac80",
 			"headers": "",
 			"headerData": [],
-			"url": "localhost:4000/products",
+			"url": "localhost:4000/api/products",
 			"folder": "6aab957e-d791-d5e3-1103-224db0763500",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -51,16 +98,14 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1622043725839,
+			"time": 1622673036190,
 			"name": "/products",
 			"description": "",
 			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
-			"responses": [],
-			"isFromCollection": true,
-			"collectionRequestId": "17aed8c7-4c99-04ce-8b7a-8c8d7da7ac80"
+			"responses": []
 		},
 		{
-			"id": "8276e280-07f3-e749-e5e4-f69ea1f4219f",
+			"id": "1c4995f0-24ef-5b6a-29b6-2042b02a0a7b",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
 				{
@@ -70,7 +115,38 @@
 					"enabled": true
 				}
 			],
-			"url": "localhost:4000/products",
+			"url": "localhost:4000/api/auth/signin",
+			"folder": "75435018-572b-438c-0b72-132021db1abe",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622673247999,
+			"name": "/signin",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"responses": [],
+			"rawModeData": "{\n\t  \"name\": \"laptop acer 2200\"\n\n}"
+		},
+		{
+			"id": "7470f0e2-6c8c-5b78-8e0b-b13c69fb6eb9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/api/auth/signup",
 			"folder": "6aab957e-d791-d5e3-1103-224db0763500",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -83,12 +159,105 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1622043902809,
+			"time": 1622737876183,
+			"name": "/Signup",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"responses": [],
+			"rawModeData": "{\n\t  \"username\": \"pleraxacid\",\n\t  \"email\": \"Mha2fil@gmail.com\",\n\t  \"password\": \"password\"\n\t  \n}"
+		},
+		{
+			"id": "7e5b284c-8edf-4ceb-a05a-9dfbbe967fce",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/api/products/60ae6b16e4c5c7121055aea5",
+			"folder": "6aab957e-d791-d5e3-1103-224db0763500",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622673060195,
+			"name": "/products update",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"responses": [],
+			"rawModeData": "{\n\t  \"name\": \"laptop acer 2200\"\n\n}"
+		},
+		{
+			"id": "8276e280-07f3-e749-e5e4-f69ea1f4219f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/api/products",
+			"folder": "6aab957e-d791-d5e3-1103-224db0763500",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622673043305,
 			"name": "/products post",
 			"description": "",
 			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
 			"responses": [],
 			"rawModeData": "{\n\t  \"name\": \"laptop acer\",\n\t  \"category\": \"laptos\",\n\t  \"price\": 352.22,\n\t  \"imgURL\": \"https://www.lenovo.com/medias/lenovo-ideapad-s-series-feature-1.jpg?context=bWFzdGVyfHJvb3R8NTI4MzZ8aW1hZ2UvanBlZ3xoYWUvaGI2Lzk4MTU5MjQ3Njg3OTguanBnfGFlNGIzOGNmNWY2Y2M2NWViMDVhMDVjZjdmMGRjNGQwNTJkNjA0NzAzZmJjNmVjODI5NDY1NDIyNTRkZjA1ZDQ\"\n}"
+		},
+		{
+			"id": "e1b2e1fb-c4df-b369-2ba9-0d979ba30930",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/api/products/60ae6bc09c0ec01a8cb9db02",
+			"folder": "6aab957e-d791-d5e3-1103-224db0763500",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622673067803,
+			"name": "/products delete",
+			"description": "",
+			"collectionId": "16f43d82-5388-d497-1981-f7af37486501",
+			"responses": [],
+			"rawModeData": "{\n\t  \"name\": \"laptop acer 2200\"\n\n}"
 		}
 	]
 }
